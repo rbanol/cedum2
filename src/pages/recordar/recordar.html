@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Menú</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+	<h3 text-center style="margin-top:15%;">CEDUM</h3>
+	<p text-center>Enviaremos a su correo electrónico la contraseña e indicaciones para acceder a su cuenta de usuario</p> 
+		<ion-list>
+			<ion-item>
+				<ion-label stacked>Ingrese su correo</ion-label>
+				<ion-input type="email"></ion-input>
+			</ion-item>
+		</ion-list>
+	<button ion-button full color="barras">ACEPTAR</button>
+	<ion-toolbar style="margin-top:60%;">
+		<div class="toolbar-content">
+			<ion-segment>
+				<button ion-button small color="barras" role="button" tappable="" value="atras">Ir atras</button>
+				<button ion-button small color="barras" role="button" tappable="" value="ayuda">¿Necesita ayuda?</button>
+			</ion-segment>
+		</div>
+	</ion-toolbar>
+</ion-content>

@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Menú</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+	<ion-item-divider color="barras" text-center><ion-icon name="arrow-dropleft" float-left></ion-icon>     Ayuda para acceder a su cuenta de usuario</ion-item-divider>
+	<div padding>
+		<p text-center>Para poder ayudarlo, indique el origen de la situación que se está presentando</p>
+		<ion-list radio-group [(ngModel)]="causa">
+			<ion-item>
+				<ion-radio value="contrasena" style="color:#000;"></ion-radio>
+				<ion-label text-justify text-wrap>He olvidado mi contraseña</ion-label>
+			</ion-item>
+			<ion-item>
+				<ion-radio value="sesion" ></ion-radio>
+				<ion-label text-justify text-wrap>Se cual es mi contraseña, sin embargo no puedo iniciar sesión</ion-label>
+			</ion-item>
+			<ion-item>
+				<ion-radio value="hacked"></ion-radio>
+				<ion-label text-justify text-wrap>Creo que otra persona está usando mi cuenta de usuario</ion-label>
+			</ion-item>
+			<ion-item>
+				<ion-radio value="usuario"></ion-radio>
+				<ion-label text-justify text-wrap>He olvidado mi nombre de usuario</ion-label>
+			</ion-item>
+		</ion-list>
+	</div>
+	<div padding>
+		<ion-toolbar color="cabezote">
+			<p color="cabezote">COMUNICARSE CON LA UNIVERSIDAD</p>
+			<ion-buttons end>
+				<button ion-button icon-only text-left>
+					<ion-icon name="call"></ion-icon>
+				</button>
+			</ion-buttons>
+		</ion-toolbar>
+	</div>
+</ion-content>

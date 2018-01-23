@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Menú</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+	<h3 text-center style="margin-top:15%;">CEDUM</h3>
+		<ion-list>
+			<ion-item>
+				<ion-label stacked>Usuario</ion-label>
+				<ion-input type="text"></ion-input>
+			</ion-item>
+			<ion-item>
+				<ion-label stacked>Contraseña</ion-label>
+				<ion-input type="password"></ion-input>
+			</ion-item>
+		</ion-list>
+	<button ion-button full color="barras">INICIAR SESIÓN</button>
+	<ion-toolbar style="margin-top:60%;">
+		<div class="toolbar-content">
+			<ion-segment>
+				<button ion-button small color="barras" role="button" tappable="" value="politica">¿Necesita ayuda?</button>
+				<button ion-button small color="barras" role="button" tappable="" value="terminos">¿Olvidó su contraseña?</button>
+			</ion-segment>
+		</div>
+	</ion-toolbar>
+</ion-content>
