@@ -1,0 +1,8 @@
+{
+  "name": "cedum",
+  "app_id": "88d11829",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
